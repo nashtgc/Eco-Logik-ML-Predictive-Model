@@ -24,7 +24,7 @@ the problem statement:
 2. Identify which products will cross a certain threshold in terms of units sold.
 
 How to identify the right threshold?
-By using the average and the median: Very imporatn to take out outlier  products with 0 sales throughout.
+By using the average and the median: Very important to take out outlier  products with 0 sales throughout.
 
 After getting the threshold, we restructure our problem statement:
 1. Identify the factors to predict units sold for the products.
@@ -32,5 +32,31 @@ After getting the threshold, we restructure our problem statement:
 
 Understanding the Dataset
 
+1. Eco-logik has collected data in 6 different tables.
+Let’s take a look at what each of these tables contain. 
 <img width="370" height="447" alt="image" src="https://github.com/user-attachments/assets/0fc4d6ec-9f1b-4e88-b526-4d267ef28529" />
 
+2. Data Dictionary - POS_Data
+This table contains the sales for each product aggregated on a weekly basis.
+<img width="798" height="542" alt="image" src="https://github.com/user-attachments/assets/b2b28cb1-cd6e-4af5-b867-b53ca62e279c" />
+
+3. Data Dictionary - Online_Data
+This table includes the weekly campaign details for each product. The date is again the weekly date.
+<img width="702" height="291" alt="image" src="https://github.com/user-attachments/assets/e879ce5c-4618-4979-a4c1-bc45e861b9c2" />
+
+4. Data Dictionary - Offline_Data
+This table includes the weekly offline campaign. The date is again the weekly date.
+<img width="661" height="452" alt="image" src="https://github.com/user-attachments/assets/004b790d-e304-416c-be44-347eaa6992de" />
+
+5. Data Dictionary - Product_Attribute_Data
+This table contains the daily data for the ratings of each product, product description length, availability of the product, etc. This is the only
+table with daily data.
+<img width="823" height="553" alt="image" src="https://github.com/user-attachments/assets/b3f5d3ff-dd68-444b-96e5-6bb2d30d0fe2" />
+
+6. Data Dictionary - VPC_Data
+This table contains the number of promotions for each product, the total number of products sold through these promotions or coupons, and the amount spent on promotions, aggregated on a weekly level.
+<img width="778" height="244" alt="image" src="https://github.com/user-attachments/assets/77e72a25-6b05-4f7b-ab00-1202319b8147" />
+
+7. Data Dictionary - Search_Rank_Data
+This table contains the search rank for the product in a week andthe  median organic search rank for that product. This
+table is at a weekly level.
